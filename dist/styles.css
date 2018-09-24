@@ -1471,6 +1471,10 @@ ul {
 	display: none;
 }
 
+.sec-04__collections:nth-of-type(n+2) {
+	display: none;
+}
+
 }
 
 @-webkit-keyframes fadeOut {
