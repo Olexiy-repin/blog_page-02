@@ -1,67 +1,88 @@
 (() => {
-  $(".sec-02__slider").owlCarousel({
+  $(".sec-03__slider").owlCarousel({
    items : 1,
    itemsCustom : true,
 
    loop: true,
-   nav: true,
+   nav: false,
    navText: ["<img alt='' src='img/sec-02/prev.png'>", "<img alt='' src='img/sec-02/next.png'>"],
-   dot: true,
+   dot: false,
 
     autoHeight : false,
 
-    margin : 0,
+    margin : -70,
   });
 
-    $(".sec-02__slider").on('changed.owl.carousel', function (event) {
-        let index = event.item.index;
-        console.log(index);
-        if (index == 2) {
-          $('.sec-02__slider-nav .active').text('01');
-        } else if (index == 3) {
-          $('.sec-02__slider-nav .active').text('02');
-        } else if (index == 4) {
-          $('.sec-02__slider-nav .active').text('03');
-        } else if (index == 5) {
-          $('.sec-02__slider-nav .active').text('01');
-        }
-      });
-
-      let owlNext = $('.sec-02 .owl-nav .owl-next');
-      let owlPrev = $('.sec-02 .owl-nav .owl-prev');
-      let index = 1;
-
-          owlNext.on('click', function (event) {
-              index++;
-              if (index > 3) {
-                $('.sec-02__slider-nav .active').text(('0' + (index - 3)));
-                index = 1;
-              } else {
-                $('.sec-02__slider-nav .active').text('0' + index);
-              }
-          });
-
-          owlPrev.on('click', function (event) {
-              index--;
-              if (index == 0) {
-                $('.sec-02__slider-nav .active').text(('0' + (index + 3)));
-                index = 3;
-              } else {
-                $('.sec-02__slider-nav .active').text('0' + index);
-              }
-          });
+    // $(".sec-02__slider").on('changed.owl.carousel', function (event) {
+    //     let index = event.item.index;
+    //     console.log(index);
+    //     if (index == 2) {
+    //       $('.sec-02__slider-nav .active').text('01');
+    //     } else if (index == 3) {
+    //       $('.sec-02__slider-nav .active').text('02');
+    //     } else if (index == 4) {
+    //       $('.sec-02__slider-nav .active').text('03');
+    //     } else if (index == 5) {
+    //       $('.sec-02__slider-nav .active').text('01');
+    //     }
+    //   });
+    //
+    //   let owlNext = $('.sec-02 .owl-nav .owl-next');
+    //   let owlPrev = $('.sec-02 .owl-nav .owl-prev');
+    //   let index = 1;
+    //
+    //       owlNext.on('click', function (event) {
+    //           index++;
+    //           if (index > 3) {
+    //             $('.sec-02__slider-nav .active').text(('0' + (index - 3)));
+    //             index = 1;
+    //           } else {
+    //             $('.sec-02__slider-nav .active').text('0' + index);
+    //           }
+    //       });
+    //
+    //       owlPrev.on('click', function (event) {
+    //           index--;
+    //           if (index == 0) {
+    //             $('.sec-02__slider-nav .active').text(('0' + (index + 3)));
+    //             index = 3;
+    //           } else {
+    //             $('.sec-02__slider-nav .active').text('0' + index);
+    //           }
+    //       });
 })();
 
-$('.sec-02__article').on('click', function (event) {
-    let articleBtn = $(this).find('.sec-02__article-btn.desc-btn');
-    let articleHref = articleBtn[0].href;
+(() => {
+  $(".sec-05__best-of-half-year-slider").owlCarousel({
+   items : 1,
+   itemsCustom : true,
 
-    window.open(
-      articleHref,
-      '_blank'
-    );
-});
+   loop: true,
+   nav: false,
+   navText: ["<img alt='' src='img/sec-02/prev.png'>", "<img alt='' src='img/sec-02/next.png'>"],
+   dot: false,
 
+    autoHeight : false,
+
+    margin : -30,
+  });
+})();
+
+(() => {
+  $(".sec-05__project-slider").owlCarousel({
+   items : 1,
+   itemsCustom : true,
+
+   loop: true,
+   nav: false,
+   navText: ["<img alt='' src='img/sec-02/prev.png'>", "<img alt='' src='img/sec-02/next.png'>"],
+   dot: false,
+
+    autoHeight : false,
+
+    margin : -90,
+  });
+})();
 // (() => {
 //   $(".sec-04__slider").owlCarousel({
 //    items : 1,
