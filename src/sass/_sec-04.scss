@@ -46,3 +46,27 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .sec-04__title {
+    font-size: 1.2rem;
+  }
+
+  .sec-04__collections-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .sec-04__collections {
+    width: 40%;
+    &:nth-of-type(-n+2) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .sec-04__collections-header {
+    align-items: flex-start;
+  }
+}

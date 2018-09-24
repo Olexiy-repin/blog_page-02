@@ -1,13 +1,6 @@
 .sec-03 {
   padding-top: 2rem;
   padding-bottom: 1rem;
-  .owl-item.active {
-    .sec-03__section-link {
-      color: #fff;
-      background-color: #bf3002;
-      box-shadow: 0 0 13px -4px #bf3002;
-    }
-  }
 }
 
 .sec-03__title {
@@ -57,4 +50,101 @@
   box-shadow: 0 0 1px 2px #eaeaea;
   border-radius: 5px;
   margin-top: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .sec-03 {
+    .owl-item.active {
+      .sec-03__section-link {
+        color: #fff;
+        background-color: #bf3002;
+        box-shadow: 0 0 13px -4px #bf3002;
+      }
+    }
+  }
+
+  .sec-03__best-first-article {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sec-03__title {
+    font-size: 1.2rem;
+  }
+
+  .sec-03__best-title {
+    font-size: 1.2rem;
+  }
+
+  .sec-03 {
+    .sec-03__best-article {
+      position: relative;
+      .sec-03__best-link {
+        position: absolute;
+        top: .9rem;
+        right: .5rem;
+        margin-top: 0;
+      }
+    }
+    .active {
+        .sec-03__section-link {
+          color: #fff;
+          background-color: #bf3002;
+          box-shadow: 0 0 13px -4px #bf3002;
+        }
+    }
+
+    .active + .active{
+        .sec-03__section-link {
+          color: #000;
+          background-color: #f8f8f8;
+          box-shadow: 0 0 13px -4px #000;
+        }
+    }
+
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      .owl-next {
+        width: 1.5rem;
+      }
+    }
+  }
+
+  .sec-03__best-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sec-03__best-first-article {
+    width: 60%;
+    position: relative;
+    align-self: baseline;
+    .sec-02__article-text {
+      color: #fff;
+      font-size: .9rem;
+      line-height: 1.2;
+    }
+  }
+
+  .sec-03__best-last-article {
+    width: 38%;
+  }
+
+  .sec-03__best-first-article-img {
+    width: 100%;
+  }
+
+  .sec-03__best-first-article-plashka {
+    width: 100%;
+    background-color: rgba(40,27,18,.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.2rem 1rem;
+
+  }
 }

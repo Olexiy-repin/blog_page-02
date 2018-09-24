@@ -51,3 +51,50 @@
   background-color: #231f20;
   color: #fff;
 }
+
+@media (min-width: 768px) {
+  .sec-05__title {
+    font-size: 1.2rem;
+  }
+
+  .sec-05 {
+    .sec-03__best-link {
+      display: none;
+    }
+    .sec-05__best-of-half-year-img {
+      width: 95%!important;
+    }
+    .sec-05__best-of-half-year {
+      .owl-nav {
+        display: flex!important;
+        position: absolute;
+        right: -.9rem;
+        top: 32%;
+        .owl-next {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .sec-05__project-title {
+    font-size: 1.2rem;
+  }
+
+  .sec-05__best-of-half-year {
+    margin-bottom: 4rem;
+  }
+
+  .sec-05__project-container {
+    .owl-nav {
+      display: flex!important;
+      position: absolute;
+      right: 0rem;
+      top: 50%;
+      transform: translateY(-50%);
+      .owl-next {
+        width: 1.5rem;
+      }
+    }
+  }
+}
