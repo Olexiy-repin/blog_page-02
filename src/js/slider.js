@@ -14,12 +14,17 @@
 
     responsive : {
     320 : {
-
+      nav : false
     },
     768 : {
         items : 3,
         margin: 20,
         nav: true
+    },
+    1200 : {
+      items : 4,
+      margin : 5,
+      nav: true
     }
 }
   });
@@ -105,12 +110,18 @@
 
     responsive : {
     320 : {
-      nav: false,
+      nav: false
     },
     768 : {
         items : 3,
         margin: 20,
         nav: true
+    },
+    1200 : {
+      items : 6,
+      loop : false,
+      nav : false,
+      margin : 20
     }
   }
   });

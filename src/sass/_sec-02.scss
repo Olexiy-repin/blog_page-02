@@ -182,3 +182,15 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .sec-02__title {
+    font-size: pxToRem(28px);
+  }
+
+  .sec-02 {
+    .sec-02__article {
+      width: 32%;
+    }
+  }
+}

@@ -148,3 +148,36 @@
 
   }
 }
+
+@media (min-width: 1200px) {
+  .sec-03__select-section {
+    margin-bottom: 4rem;
+  }
+
+  .sec-03__section-link {
+    padding: 1.5rem 0;
+    width: 15rem;
+  }
+
+  .sec-03 .owl-nav {
+    display: flex!important;
+  }
+
+  .sec-03__title {
+    font-size: pxToRem(22px);
+  }
+
+  .sec-03__best-title {
+    font-size: pxToRem(22px);
+  }
+
+  .sec-03__best-first-article .sec-02__article-text {
+    font-size: pxToRem(19px);
+  }
+
+  .sec-03 {
+    .sec-02__article {
+      padding-right: 5rem;
+    }
+  }
+}

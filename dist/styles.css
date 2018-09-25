@@ -1342,8 +1342,8 @@ ul {
 @media (min-width: 1200px) {
 
 .sec-01 {
-	padding-top: 10.7rem;
-	padding-bottom: 9.9rem;
+	padding-top: 8.7rem;
+	padding-bottom: 0rem;
 }
 
 .sec-01__menu-item {
@@ -1356,6 +1356,10 @@ ul {
 
 .sec-01__header {
 	padding: 1.8rem 2.2rem;
+	width: 1201px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .sec-01__title {
@@ -1370,6 +1374,87 @@ ul {
 
 .sec-02__article-content {
 	font-size: 1.0625rem;
+}
+
+.sec-02__title {
+	font-size: 1.75rem;
+}
+
+.sec-02 .sec-02__article {
+	width: 32%;
+}
+
+.sec-03__select-section {
+	margin-bottom: 4rem;
+}
+
+.sec-03__section-link {
+	padding: 1.5rem 0;
+	width: 15rem;
+}
+
+.sec-03 .owl-nav {
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+
+.sec-03__title {
+	font-size: 1.375rem;
+}
+
+.sec-03__best-title {
+	font-size: 1.375rem;
+}
+
+.sec-03__best-first-article .sec-02__article-text {
+	font-size: 1.1875rem;
+}
+
+.sec-03 .sec-02__article {
+	padding-right: 5rem;
+}
+
+.sec-04__title {
+	font-size: 1.375rem;
+	margin-bottom: 2rem;
+}
+
+.sec-04__collections {
+	width: 24%;
+}
+
+.sec-04__collections-header-title {
+	padding-right: 2rem;
+	line-height: 1.3;
+}
+
+.sec-04 {
+	padding-top: 4rem;
+	position: relative;
+}
+
+.sec-04 .sec-03__best-link {
+	position: absolute;
+	top: 3.9rem;
+	margin-top: 0;
+	right: 35px;
+}
+
+.sec-05__title {
+	font-size: 1.375rem;
+}
+
+.sec-05__best-of-half-year-text {
+	font-size: 0.9375rem;
+}
+
+.sec-05__project-container .owl-nav {
+	display: none !important;
+}
+
+.sec-05__project-link {
+	width: 11rem;
 }
 
 .footer {

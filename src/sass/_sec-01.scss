@@ -75,8 +75,8 @@
 
 @media (min-width: 1200px) {
   .sec-01 {
-    padding-top: 10.7rem;
-    padding-bottom: 9.9rem;
+    padding-top: 8.7rem;
+    padding-bottom: 0rem;
   }
 
   .sec-01__menu-item {
@@ -89,6 +89,9 @@
 
   .sec-01__header {
     padding: 1.8rem 2.2rem;
+    width: 1201px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .sec-01__title {

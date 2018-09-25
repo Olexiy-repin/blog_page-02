@@ -98,3 +98,23 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .sec-05__title {
+    font-size: 1.375rem;
+  }
+
+  .sec-05__best-of-half-year-text {
+    font-size: pxToRem(15px);
+  }
+
+  .sec-05__project-container {
+    .owl-nav {
+      display: none!important;
+    }
+  }
+
+  .sec-05__project-link {
+    width: 11rem;
+  }
+}
