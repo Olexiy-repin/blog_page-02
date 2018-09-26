@@ -463,6 +463,13 @@ ul {
 	margin-bottom: 2.5rem;
 }
 
+.sec-02 .sec-02__article:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
 .sec-02__title {
 	font-family: GothaB;
 	font-size: .8rem;
@@ -487,6 +494,7 @@ ul {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-bottom: 1rem;
+	cursor: pointer;
 }
 
 .sec-02__article-content {
@@ -531,6 +539,49 @@ ul {
 	padding-bottom: .5rem;
 	border-bottom: 2px solid #969696;
 	margin-bottom: 1rem;
+	cursor: pointer;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.sec-02__news:first-of-type:hover,
+.sec-02__recomendation:first-of-type:hover {
+	opacity: 1;
+}
+
+.sec-02__news:first-of-type:hover .sec-02__news-text,
+.sec-02__recomendation:first-of-type:hover .sec-02__news-text {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	opacity: .5;
+}
+
+.sec-02__news:first-of-type:hover .sec-02__news-tags,
+.sec-02__recomendation:first-of-type:hover .sec-02__news-tags {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	opacity: .5;
+}
+
+.sec-02__news:first-of-type:hover .sec-02__recomendation-text,
+.sec-02__recomendation:first-of-type:hover .sec-02__recomendation-text {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	opacity: .5;
+}
+
+.sec-02__news:first-of-type:hover .sec-02__recomendation-tags,
+.sec-02__recomendation:first-of-type:hover .sec-02__recomendation-tags {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	opacity: .5;
+}
+
+.sec-02__news:hover,
+.sec-02__recomendation:hover {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	opacity: .5;
 }
 
 .sec-02__news:last-of-type,
@@ -610,6 +661,13 @@ ul {
 	box-shadow: 0 0 1px 2px #eaeaea;
 	border-radius: 5px;
 	margin-top: 1.5rem;
+}
+
+.sec-03__best-link:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	background-color: #c03002;
+	color: #fff;
 }
 
 .sec-04 {
@@ -723,6 +781,22 @@ ul {
 	width: 12rem;
 	background-color: #231f20;
 	color: #fff;
+}
+
+.sec-05__project-link:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	background-color: #bf3002;
+}
+
+.sec-05__best-of-half-year-slider .slide {
+	cursor: pointer;
+}
+
+.sec-05__best-of-half-year-slider .slide:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	opacity: .8;
 }
 
 .footer {
@@ -1153,6 +1227,13 @@ ul {
 	position: relative;
 	-ms-flex-item-align: baseline;
 	align-self: baseline;
+	cursor: pointer;
+}
+
+.sec-03__best-first-article:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	opacity: .9;
 }
 
 .sec-03__best-first-article .sec-02__article-text {
@@ -1196,6 +1277,17 @@ ul {
 
 .sec-04__collections {
 	width: 40%;
+	cursor: pointer;
+}
+
+.sec-04__collections:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate(0%, 5%);
+	transform: translate(0%, 5%);
+	zoom: 97%;
 }
 
 .sec-04__collections:nth-of-type(-n+2) {
@@ -1431,12 +1523,15 @@ ul {
 
 .sec-04 {
 	padding-top: 4rem;
+}
+
+.sec-04 .container--width {
 	position: relative;
 }
 
 .sec-04 .sec-03__best-link {
 	position: absolute;
-	top: 3.9rem;
+	top: 0;
 	margin-top: 0;
 	right: 35px;
 }

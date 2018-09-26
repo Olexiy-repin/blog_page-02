@@ -50,6 +50,20 @@
   width: 12rem;
   background-color: #231f20;
   color: #fff;
+  &:hover {
+    transition: all .5s linear;
+    background-color: #bf3002;
+  }
+}
+
+.sec-05__best-of-half-year-slider {
+  .slide {
+    cursor: pointer;
+    &:hover {
+      transition: all .5s linear;
+      opacity: .8;
+    }
+  }
 }
 
 @media (min-width: 768px) {
